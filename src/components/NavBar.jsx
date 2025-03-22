@@ -108,7 +108,7 @@ const NavBar = () => {
           </NavLink>
         </li>
         <Divider className="" />
-        {/* <li className="">
+        <li className="">
           <NavLink
             to="/contact"
             onClick={() => {
@@ -117,7 +117,7 @@ const NavBar = () => {
           >
             Contact
           </NavLink>
-        </li> */}
+        </li>
       </MobileMenu>
 
       <div className="hidden md:block">
