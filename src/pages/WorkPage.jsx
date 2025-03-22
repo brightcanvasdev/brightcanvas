@@ -55,7 +55,7 @@ const WorkPage = () => {
           </div>
           <div className="workDesc flex-3">
             <p
-              className="text-xl text-justify  lg:text-lg leading-8 cabinetLight"
+              className="text-base text-justify  lg:text-lg leading-8 cabinetLight"
               dangerouslySetInnerHTML={{
                 __html: workData[routeName]?.workDesc,
               }}

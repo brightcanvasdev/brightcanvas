@@ -24,10 +24,12 @@ export const WorkContent = {
               brand's vibrant yet professional ethos, maintaining consistency
               throughout.
               <br />
+              <br />
               The homepage was designed to immediately capture attention, with
               bold visuals and a clear call-to-action leading visitors deeper
               into the site. Each section was crafted to flow seamlessly,
               highlighting BivocalBirds' expertise, values, and services.
+              <br />
               <br />
               Interactive elements like hover effects and transitions were
               integrated to make the site engaging while maintaining simplicity.
@@ -54,8 +56,8 @@ export const WorkContent = {
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/8.webp",
 
     workDesc: `
-		For the Storyvord Product Design, the focus was on creating an intuitive and visually engaging platform that catered to both new and experienced users. The process began with in-depth user research to understand the target audience and their needs, followed by wire-framing to map out the user flow effectively. <br />
-The UI design incorporated a modern and clean aesthetic, ensuring a consistent and professional look across all screens. Colours, typography, and visual elements were chosen to reflect the brand’s dynamic and creative personality. <br />
+		For the Storyvord Product Design, the focus was on creating an intuitive and visually engaging platform that catered to both new and experienced users. The process began with in-depth user research to understand the target audience and their needs, followed by wire-framing to map out the user flow effectively. <br /><br />
+The UI design incorporated a modern and clean aesthetic, ensuring a consistent and professional look across all screens. Colours, typography, and visual elements were chosen to reflect the brand’s dynamic and creative personality. <br /><br />
 UX optimisation was prioritised to enhance functionality and ensure users could seamlessly navigate features like project creation, collaboration tools, and data visualisation. Interaction design was also implemented to make the user experience engaging, using smooth transitions and micro-interactions to guide user actions naturally. <br />
 Finally, a comprehensive design system was developed to maintain consistency and scalability, providing Storyvord with a strong foundation for future growth. The result was a product that balanced creativity with functionality, delivering a seamless experience for all users.
 		`,
