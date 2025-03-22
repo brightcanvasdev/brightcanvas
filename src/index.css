@@ -101,7 +101,8 @@ body {
 }
 
 .hero {
-  background: url("https://github.com/brightcanvasdev/imagehosting/blob/main/HomePageAssets/HeroBG.png?raw=true");
+  /* background: url("https://github.com/brightcanvasdev/imagehosting/blob/main/HomePageAssets/HeroBG.png?raw=true"); */
+  background: url("https://brightcanvas.netlify.app/Images/HeroBG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
