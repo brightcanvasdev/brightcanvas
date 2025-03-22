@@ -6,35 +6,40 @@ import LearnMore from "../components/LearnMore";
 const SolutionsData = [
   {
     id: 0,
-    iconsURL: "./src/assets/icons/edit.png",
+    iconsURL:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/edit.png",
     title: "Brand Research",
     desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
     navLink: "",
   },
   {
     id: 1,
-    iconsURL: "./src/assets/icons/moodboard.png",
+    iconsURL:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/moodboard.png",
     title: "Mood Boarding",
     desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
     navLink: "",
   },
   {
     id: 2,
-    iconsURL: "./src/assets/icons/ux.png",
+    iconsURL:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/ux.png",
     title: "UI/UX",
     desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
     navLink: "",
   },
   {
     id: 3,
-    iconsURL: "./src/assets/icons/geometric-shape.png",
+    iconsURL:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/geometric-shape.png",
     title: "Graphic Design Assets",
     desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
     navLink: "",
   },
   {
     id: 4,
-    iconsURL: "./src/assets/icons/layers.png",
+    iconsURL:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/layers.png",
     title: "Graphic Design Prints",
     desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
     navLink: "",
