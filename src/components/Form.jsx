@@ -62,7 +62,7 @@ const Form = () => {
         <div className="grid place-items-center">
           <button
             type="submit"
-            className="max-w-max h-10 flex items-center gap-2 px-12 rounded-4xl font-medium text-xl bg-white hover:bg-project-orange hover:text-white transition-all transition-discrete ease-out hover:scale-110 text-black cabinetMedium"
+            className="max-w-max h-10 flex items-center gap-2 px-12 rounded-4xl font-medium text-base lg:text-xl bg-white hover:bg-project-orange hover:text-white transition-all transition-discrete ease-out hover:scale-110 text-black cabinetMedium"
           >
             Submit Request
           </button>
