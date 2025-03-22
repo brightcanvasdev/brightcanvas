@@ -1,0 +1,101 @@
+/* @keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.blobs {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+.blobs-slide {
+  display: inline-flex;
+
+  animation: 10s slide infinite linear;
+} */
+
+/* @keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.blobs {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 60px 0;
+  position: relative;
+}
+
+.blobs-slide {
+  display: flex;
+  gap: 0; 
+  animation: slide 10s linear infinite;
+  width: max-content; 
+} */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.blobs {
+  display: flex;
+  overflow: hidden;
+
+  white-space: nowrap;
+  position: relative;
+}
+
+.blobs:before,
+.blobs:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.blobs:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+}
+
+.blobs:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+}
+
+.blobs:hover .blobs-slide {
+  animation-play-state: paused;
+}
+
+.blobs-slide {
+  /* display: inline-flex; */
+  animation: 20s slide linear infinite;
+}
+
+.blob-item {
+  padding: 7px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}

@@ -1,0 +1,173 @@
+@import url("./assets/fonts/css/cabinet-grotesk.css");
+@import "tailwindcss";
+/* @import "tailwindScrollbar"; */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b0b0b0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #909090;
+}
+@theme {
+  --color-project-orange: #fc8817;
+  --color-project-sec-orange: #e8571e;
+  --color-project-grad-orange: #e95e1e;
+  --color-project-grad-yellow: #face10;
+  --color-project-brown: #fc8817;
+  --color-project-gray: #b5b5b5;
+  --drop-shadow-glow: 0px 0px 35px #e95e1e;
+  --drop-shadow-glow-new: #e95e1e 0px 8px 24px, #e95e1e 0px 16px 56px,
+    #e95e1e 0px 24px 80px;
+}
+
+/* @plugin {
+tailwindSCrollbar();
+} */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.cabinetThin {
+  font-family: "CabinetGrotesk-Thin";
+}
+
+.cabinetExtraLight {
+  font-family: "CabinetGrotesk-Extralight";
+}
+.cabinetLight {
+  font-family: "CabinetGrotesk-Light";
+}
+.cabinetRegular {
+  font-family: "CabinetGrotesk-Regular";
+}
+.cabinetMedium {
+  font-family: "CabinetGrotesk-Medium";
+}
+.cabinetBold {
+  font-family: "CabinetGrotesk-Bold";
+}
+.cabinetExtraBold {
+  font-family: "CabinetGrotesk-Extrabold";
+}
+.cabinetBlack {
+  font-family: "CabinetGrotesk-Black";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-zinc-50;
+}
+
+body {
+  font-family: CabinetGrotesk-Regular;
+}
+.section {
+  @apply pt-20 lg:p-32;
+}
+
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+.material-symbols-rounded {
+  @apply w-[1em] h-[1em] overflow-hidden;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.project-orange {
+  @apply bg-[#e8571e];
+}
+
+.project-white {
+  @apply bg-white;
+}
+
+.hero {
+  background: url("./src/assets/images/HeroBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.Hero-Heading {
+  font-family: "CabinetGrotesk-Extrabold";
+}
+
+/* .solutionCard {
+  @apply bg-project-brown/25 hover:bg-gradient-to-r from-[#e95e1e] to-[#ffba2f] 
+  hover:drop-shadow-glow hover:scale-105 transition-all ease-out duration-500 
+  p-4 lg:p-6 rounded-xl w-[300px] flex-shrink-0 h-full flex flex-col text-left;
+} */
+
+.solutionCard {
+  @apply bg-project-brown/25 hover:bg-gradient-to-r from-[#e95e1e] to-[#ffba2f] hover:drop-shadow-glow hover:scale-105 transition-all ease-out transition-discrete duration-500 p-4 lg:p-6 rounded-xl w-[350px] h-full flex flex-col flex-3  lg:min-w-[270px] lg:max-w-[370px] text-left;
+}
+
+/* .solutionCard :hover {
+  background: linear-gradient(to right, #e95e1e, #ffba2f);
+  transition: all 0.5 ease-out;
+} */
+
+.learnMore {
+  @apply text-project-grad-yellow;
+}
+
+.label {
+  @apply block text-lg  mb-2;
+}
+.text-field {
+  @apply block outline-none  border-white border-b w-full;
+}
+
+.text-field::placeholder {
+  @apply text-sm font-medium text-[#525252];
+}
+.form-field {
+  @apply w-full flex flex-col items-start gap-0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 5;
+}
+
+.blogParaHeading {
+  @apply text-2xl;
+}
+
+.paragraph {
+  @apply text-base lg:text-lg leading-7 lg:leading-10 lg:tracking-wider;
+}

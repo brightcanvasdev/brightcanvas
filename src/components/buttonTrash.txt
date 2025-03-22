@@ -1,0 +1,128 @@
+// const Button = forwardRef((props, forwardedRef) => (
+//   <label className="cursor-pointer">
+//     <input
+//       type="checkbox"
+//       name=""
+//       className="hidden"
+//       ref={forwardedRef}
+//       {...props}
+//     />
+
+//     <div
+//       className={`w-14 p-1 rounded-full ${
+//         props.checked ? "bg-blue-200" : "bg-gray-200"
+//       }`}
+//     >
+//       <div
+//         className={`w-fit p-0.5 shadow-sm rounded-full transition-all duration-300 text-white ${
+//           props.checked
+//             ? "bg-blue-500 translate-x-6 rotate-0"
+//             : "bg-gray-400 -rotate-180"
+//         }`}
+//       >
+//         {props.checked ? (
+//           <span class="material-symbols-rounded">arrow_outward</span>
+//         ) : (
+//           <span class="material-symbols-outlined">arrow_right_alt</span>
+//         )}
+//       </div>
+//     </div>
+//   </label>
+// ));
+
+// export default Button;
+
+// const container = {
+//   width: 120,
+//   // height: 50,
+//   // backgroundColor: "var(--hue-3-transparent)",
+//   borderRadius: 50,
+//   cursor: "pointer",
+//   display: "flex",
+//   // padding: 10,
+// };
+
+// const handle = {
+//   width: 35,
+//   height: 35,
+//   // backgroundColor: "#9911ff",
+//   borderRadius: "50%",
+// };
+
+
+// export default function Button() {
+//   const [isOn, setIsOn] = useState(false);
+
+//   const [isHovered, setIsHovered] = useState(false);
+
+//   const toggleSwitch = () => setIsOn(!isOn);
+
+//   return (
+//     <button
+//       className={`toggle-container px-2 py-1 ${
+//         isOn ? "bg-[#e8571e]" : "bg-white"
+//       } `}
+//       style={{
+//         ...container,
+//         justifyContent: "flex-" + (isOn ? "start" : "end"),
+//         flexDirection: "flex-" + (isOn ? "row" : "row-reverse"),
+//       }}
+//       onMouseEnter={toggleSwitch}
+//       onMouseLeave={toggleSwitch}
+//     >
+//       <motion.div
+//         className={`toggle-handle  ${
+//           isOn ? "text-[#e8571e] project-white" : "project-orange text-white"
+//         }  flex justify-center items-center`}
+//         style={handle}
+//         layout
+//         transition={{
+//           type: "spring",
+//           visualDuration: 0.3,
+//           bounce: 0.5,
+//         }}
+//       >
+//         {isOn ? (
+//           <span class="material-symbols-outlined">arrow_right_alt</span>
+//         ) : (
+//           <span class="material-symbols-rounded">arrow_outward</span>
+//         )}
+//       </motion.div>
+//     </button>
+//   );
+// }
+
+// onMouseEnter={() => setIsHovered(true)}
+// onMouseLeave={() => setIsHovered(false)}
+// onClick={toggleSwitch}
+
+{
+  /* <motion.div
+        className={`${
+          isOn ? "text-[#e8571e] project-white" : "project-orange text-white"
+        }  flex justify-center items-center`}
+        style={handle}
+        layout
+        transition={{
+          type: "spring",
+          visualDuration: 0.3,
+          bounce: 0.5,
+        }}
+      >
+      </motion.div> */
+}
+
+// const Button = ({ Content }) => {
+//   return (
+//     <button className="btn flex items-center justify-between gap-4 text-base font-bold bg-white text-black px-2 py-1 rounded-4xl uppercase hover:bg-[#e8571e] hover:text-white hover:flex-row-reverse transition-all ease-out transition-discrete duration-900  delay-150">
+//       <span className="ml-2">{Content}</span>
+//       <div className="circle w-10 h-10 flex justify-center items-center rounded-3xl project-orange text-white hover:text-[#e8571e]">
+//         <span class="material-symbols-rounded">arrow_outward</span>
+//       </div>
+//     </button>
+//   );
+// };
+
+/**
+ * ==============   Styles   ================
+ */
