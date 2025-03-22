@@ -101,7 +101,7 @@ body {
 }
 
 .hero {
-  background: url("./src/assets/images/HeroBG.png");
+  background: url("https://github.com/brightcanvasdev/imagehosting/blob/main/HomePageAssets/HeroBG.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

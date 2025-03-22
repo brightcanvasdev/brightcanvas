@@ -3,7 +3,11 @@ import React from "react";
 const Divider = () => {
   return (
     <div className="">
-      <img src="./src/assets/images/Streak.png" alt="" className="" />
+      <img
+        src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/HomePageAssets/Streak.png"
+        alt=""
+        className=""
+      />
     </div>
   );
 };

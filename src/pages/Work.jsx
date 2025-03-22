@@ -8,49 +8,56 @@ import { ScrollToTop } from "../utils/ScrollToTop";
 const WorkData = [
   {
     id: 1,
-    imgUrl: "./src/assets/WorkImages/9.webp",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/9.webp",
     title: "BivocalBirds Web Design",
     desc: "Designed a user-centric real estate property listing website aimed at providing seamless property search experiences.",
     routeName: "bivocalBirdsWebDesign",
   },
   {
     id: 2,
-    imgUrl: "./src/assets/WorkImages/8.webp",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/8.webp",
     title: "Storyvord Product Design",
     desc: "Storyvord is a production management platform designed to streamline the filmmaking process by providing tools for planning, organising, and managing projects effectively.",
     routeName: "storyvordProductDesign",
   },
   {
     id: 3,
-    imgUrl: "./src/assets/WorkImages/7.webp",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/7.webp",
     title: "Storyvord Website Design",
     desc: "Designed a user-centric landing page for Storyvord, a production management platform, focused on delivering a seamless and intuitive experience for filmmakers to plan, organize, and collaborate on projects effectively.",
     routeName: "storyvordWebDesign",
   },
   {
     id: 4,
-    imgUrl: "./src/assets/WorkImages/10.png",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/10.png",
     title: "ALPHAMONEY Website Design",
     desc: "AlphaMoney is a P2P lending platform connecting borrowers and investors in a secure and efficient environment. ",
     routeName: "alphamoneyWebDesign",
   },
   {
     id: 5,
-    imgUrl: "./src/assets/WorkImages/6.webp",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/6.webp",
     title: "ALPHAMONEY Web-Product Design",
     desc: "AlphaMoney is a P2P lending platform crafted to streamline financial interactions between borrowers and investors. I designed the product's end-to-end user experience, including intuitive dashboards for monitoring active investments, repayment schedules, and default penalties.",
     routeName: "alphamoneyWebProdDesign",
   },
   {
     id: 6,
-    imgUrl: "./src/assets/WorkImages/4.webp",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/4.webp",
     title: "ALPHAMONEY Mobile App Design",
     desc: "AlphaMoney's mobile app brings the convenience of peer-to-peer lending to users' fingertips. I designed the app with a user-first approach, focusing on intuitive navigation and streamlined workflows for both borrowers and investors.",
     routeName: "alphamoneyMobileAppDesign",
   },
   {
     id: 7,
-    imgUrl: "./src/assets/WorkImages/3.webp",
+    imgUrl:
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/3.webp",
     title: "JungleAvengers Website Design",
     desc: "JungleAvengers is a resort website designed to provide potential visitors with a seamless experience in exploring, booking, and learning about the resort's offerings.",
     routeName: "jungleAvengersWebDesign",

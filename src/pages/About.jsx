@@ -65,7 +65,7 @@ const About = () => {
       >
         <div className="flex flex-col gap-4">
           <img
-            src="./src/assets/About/Vision.png"
+            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/AboutImages/Vision.png"
             alt=""
             className="w-20 lg:w-32 "
           />
@@ -80,7 +80,7 @@ const About = () => {
 
         <div className="flex flex-col gap-4">
           <img
-            src="./src/assets/About/Mission.png"
+            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/AboutImages/Mission.png"
             alt=""
             className="w-20 lg:w-32"
           />
