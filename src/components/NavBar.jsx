@@ -23,7 +23,7 @@ const MobileMenu = styled.ul`
   width: 100%;
   padding: 12px 30px 24px 30px;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 0;
   transition: all 0.4s ease-in-out;
   transform: ${({ isOpen }) =>
