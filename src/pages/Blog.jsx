@@ -10,7 +10,7 @@ const BlogData = [
     ImageUrl:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/BlogsImages/1.webp",
     title: "How Branding Can Help You Enhance Your Visual Presence",
-    date: "April 24, 2022 - 5 min read",
+    date: "March 5, 2025 - 5 min read",
     routeName: "howBrandingCanHelpYou",
   },
   {
@@ -19,7 +19,7 @@ const BlogData = [
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/BlogsImages/2.webp",
     title:
       "Creating a Strong Visual Presence for Your Restaurant: The Power of Branding",
-    date: "April 24, 2022 - 5 min read",
+    date: "March 12, 2025 - 5 min read",
     routeName: "creatingAStrongVisualPresenceforRestaurant",
   },
   {
@@ -27,7 +27,7 @@ const BlogData = [
     ImageUrl:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/BlogsImages/3.webp",
     title: "Why a Good Logo is Important for Your Brand",
-    date: "April 24, 2022 - 5 min read",
+    date: "March 17, 2025 - 5 min read",
     routeName: "whyAgoodLogoIsImportant",
   },
 ];

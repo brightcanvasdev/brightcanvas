@@ -11,7 +11,7 @@ const SolutionCard = ({ iconsURL, title, desc, navLink }) => {
       <h2 className="cabinetBold text-xl">{title}</h2>
 
       <p className="cabinetRegular text-sm ">{desc}</p>
-      <LearnMore />
+      {/* <LearnMore /> */}
     </div>
   );
 

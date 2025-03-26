@@ -9,19 +9,19 @@ const BlogData = [
     id: 1,
     ImageUrl: "./src/assets/BlogImages/Blog_1.png",
     title: "How Branding Can Help You Enhance Your Visual Presence",
-    date: "April 24, 2022 - 5 min read",
+    date: "March 5, 2025 - 5 min read",
   },
   {
     id: 2,
     ImageUrl: "./src/assets/BlogImages/Blog_2.png",
     title: "How Branding Can Help You Enhance Your Visual Presence",
-    date: "April 24, 2022 - 5 min read",
+    date: "March 12, 2025 - 5 min read",
   },
   {
     id: 3,
     ImageUrl: "./src/assets/BlogImages/Blog_3.png",
     title: "How Branding Can Help You Enhance Your Visual Presence",
-    date: "April 24, 2022 - 5 min read",
+    date: "March 17, 2025 - 5 min read",
   },
 ];
 

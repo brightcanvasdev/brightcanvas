@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <div className="">
         <span className="w-1/2 lg:w-max text-gray-300 text-base lg:text-base">
-          © 2024 Brightcanvas.in All Rights Reserved
+          © 2025 Brightcanvas.in All Rights Reserved
         </span>
       </div>
       <div className="">
