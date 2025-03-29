@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="">
         <ul>
           <li className="flex justify-center items-center gap-4 lg:gap-4">
-            <a
+            {/* <a
               href=""
               className="p-2 lg:p-2 border-2 border-white rounded-full"
             >
@@ -28,10 +28,11 @@ const Footer = () => {
                 alt=""
                 className="w-5  lg:h-6 lg:w-6"
               />
-            </a>
+            </a> */}
             <a
-              href=""
-              className="p-2 lg:p-2 border-2 border-white rounded-full"
+              href="https://www.instagram.com/birghtcanvas.in?igsh=MWk0amJ0MXlidDMyMA=="
+              target="_blank"
+              className="p-2 lg:p-2 border-2 border-white rounded-full hover:scale-110 transition-all ease"
             >
               <img
                 src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/instagram-white-icon.png"
@@ -40,11 +41,12 @@ const Footer = () => {
               />
             </a>
             <a
-              href=""
-              className="p-2 lg:p-2 border-2 border-white rounded-full"
+              href="https://www.linkedin.com/company/brightcanvas-in/"
+              target="_blank"
+              className="p-2 lg:p-2 border-2 border-white rounded-full hover:scale-110 transition-all ease"
             >
               <img
-                src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/x-social-media-white-icon.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZy25qVnXim0IHxSZ9q0eQiW3E-NHXxDjuQ&s"
                 alt=""
                 className="w-5  lg:h-6 lg:w-6"
               />
