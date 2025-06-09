@@ -9,7 +9,7 @@ const SolutionsData = [
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/edit.png",
     title: "Brand Research",
-    desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
+    desc: "We dive deep into the soul of your brand, uncover how your audience thinks, mapping the magic between brand and the audience.",
     navLink: "",
   },
   {
@@ -17,7 +17,7 @@ const SolutionsData = [
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/moodboard.png",
     title: "Mood Boarding",
-    desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
+    desc: "We translate ideas into visual stories - settings the tone, style, and feel that brings your brand to life.",
     navLink: "",
   },
   {
@@ -25,7 +25,7 @@ const SolutionsData = [
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/ux.png",
     title: "UI/UX",
-    desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
+    desc: "We don’t just design interfaces — we engineer intuitive journeys that click, swipe, and convert.",
     navLink: "",
   },
   {
@@ -41,7 +41,7 @@ const SolutionsData = [
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/layers.png",
     title: "Graphic Design Prints",
-    desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
+    desc: "High quality print designs. From business cards and brochures to posters and packaging, we craft visually striking.",
     navLink: "",
   },
 ];
