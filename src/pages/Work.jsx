@@ -1,85 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import TitleHead from "../components/TitleHead";
 import Footer from "../components/Footer";
 import WorkCard from "../components/WorkCard";
 import { ScrollToTop } from "../utils/ScrollToTop";
-
-const WorkData = [
-  {
-    id: 1,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/9.webp",
-    title: "BivocalBirds Web Design",
-    desc: "Designed a user-centric real estate property listing website aimed at providing seamless property search experiences.",
-    routeName: "bivocalBirdsWebDesign",
-  },
-  {
-    id: 2,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/8.webp",
-    title: "Storyvord Product Design",
-    desc: "Storyvord is a production management platform designed to streamline the filmmaking process by providing tools for planning, organising, and managing projects effectively.",
-    routeName: "storyvordProductDesign",
-  },
-  {
-    id: 3,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/7.webp",
-    title: "Storyvord Website Design",
-    desc: "Designed a user-centric landing page for Storyvord, a production management platform, focused on delivering a seamless and intuitive experience for filmmakers to plan, organize, and collaborate on projects effectively.",
-    routeName: "storyvordWebDesign",
-  },
-  {
-    id: 4,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/10.png",
-    title: "ALPHAMONEY Website Design",
-    desc: "AlphaMoney is a P2P lending platform connecting borrowers and investors in a secure and efficient environment. ",
-    routeName: "alphamoneyWebDesign",
-  },
-  {
-    id: 5,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/6.webp",
-    title: "ALPHAMONEY Web-Product Design",
-    desc: "AlphaMoney is a P2P lending platform crafted to streamline financial interactions between borrowers and investors. I designed the product's end-to-end user experience, including intuitive dashboards for monitoring active investments, repayment schedules, and default penalties.",
-    routeName: "alphamoneyWebProdDesign",
-  },
-  {
-    id: 6,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/4.webp",
-    title: "ALPHAMONEY Mobile App Design",
-    desc: "AlphaMoney's mobile app brings the convenience of peer-to-peer lending to users' fingertips. I designed the app with a user-first approach, focusing on intuitive navigation and streamlined workflows for both borrowers and investors.",
-    routeName: "alphamoneyMobileAppDesign",
-  },
-  {
-    id: 7,
-    imgUrl:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/WorkImages/3.webp",
-    title: "JungleAvengers Website Design",
-    desc: "JungleAvengers is a resort website designed to provide potential visitors with a seamless experience in exploring, booking, and learning about the resort's offerings.",
-    routeName: "jungleAvengersWebDesign",
-  },
-  // {
-  //   id: 8,
-  //   imgUrl: "./src/assets/WorkImages/2.webp",
-  //   title: "Intranet Product Design",
-  //   desc: "The Visitor Management System is designed to streamline and enhance the process of managing visitors in corporate environments.",
-  //   routeName: "intranetProdDesign",
-  // },
-  // {
-  //   id: 9,
-  //   imgUrl: "./src/assets/WorkImages/1.webp",
-  //   title: "Visitor Management System",
-  //   desc: "The Visitor Management System is designed to streamline and enhance the process of managing visitors in corporate environments.",
-  //   routeName: "visitorMgmtSystem",
-  // },
-];
+import { fetchPublishedWorks } from "../services/workService";
 
 const Work = () => {
   ScrollToTop();
+
+  const [workData, setWorkData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    loadWorkData();
+  }, []);
+
+  const loadWorkData = async () => {
+    try {
+      const works = await fetchPublishedWorks();
+      setWorkData(works);
+    } catch (err) {
+      console.error("Error loading work data:", err);
+      setError("Failed to load work projects");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <motion.div
+        className="w-full h-full lg:min-h-screen flex flex-col justify-center items-center gap-14 lg:gap-16 pt-20 pb-10 lg:pt-36 text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-project-orange"></div>
+          <p className="text-white">Loading work projects...</p>
+        </div>
+      </motion.div>
+    );
+  }
+
+  if (error) {
+    return (
+      <motion.div
+        className="w-full h-full lg:min-h-screen flex flex-col justify-center items-center gap-14 lg:gap-16 pt-20 pb-10 lg:pt-36 text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="flex flex-col items-center gap-4">
+          <p className="text-red-400">{error}</p>
+          <button
+            onClick={loadWorkData}
+            className="px-4 py-2 bg-project-orange text-white rounded-lg hover:bg-project-sec-orange transition-colors"
+          >
+            Try Again
+          </button>
+        </div>
+      </motion.div>
+    );
+  }
+
   return (
     <motion.div
       className="w-full h-full lg:min-h-screen flex flex-col justify-start items-center gap-14 lg:gap-16  pt-20 pb-10 lg:pt-36  text-center "
@@ -103,15 +91,24 @@ const Work = () => {
       </div>
 
       <div className="blogsContainer lg:px-20  flex justify-center items-start gap-6 lg:gap-12 flex-col flex-wrap lg:flex-row">
-        {WorkData.map((work, index) => (
-          <WorkCard
-            key={index}
-            imgUrl={work.imgUrl}
-            title={work.title}
-            desc={work.desc}
-            routeName={work.routeName}
-          />
-        ))}
+        {workData.length > 0 ? (
+          workData.map((work, index) => (
+            <WorkCard
+              key={work.id}
+              imgUrl={work.imgUrl}
+              title={work.title}
+              desc={work.desc}
+              routeName={work.routeName}
+            />
+          ))
+        ) : (
+          <div className="text-center text-white">
+            <p>No work projects available at the moment.</p>
+            <p className="text-sm text-gray-400 mt-2">
+              Check back soon for new projects!
+            </p>
+          </div>
+        )}
       </div>
 
       <Footer />

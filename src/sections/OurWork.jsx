@@ -1,38 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Title from "../components/Title";
 import Divider from "../components/Divider";
 import Button from "../components/Button";
 import { NavLink } from "react-router";
-
-const Works = [
-  {
-    id: 0,
-    title: "BivocalBirds",
-    navLink: "bivocalBirdsWebDesign",
-  },
-  {
-    id: 1,
-    title: "Storyvord",
-    navLink: "storyvordProductDesign",
-  },
-  {
-    id: 2,
-    title: "Alpha Money",
-    navLink: "alphamoneyWebDesign",
-  },
-  {
-    id: 3,
-    title: "JungleAvengers",
-    navLink: "jungleAvengersWebDesign",
-  },
-  // {
-  //   id: 4,
-  //   title: "Alpha Corp",
-  //   navLink: "",
-  // },
-];
+import { fetchFeaturedWorks } from "../services/workService";
 
 const OurWork = () => {
+  const [works, setWorks] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loadFeaturedWorks();
+  }, []);
+
+  const loadFeaturedWorks = async () => {
+    try {
+      const featuredWorks = await fetchFeaturedWorks(4);
+      setWorks(featuredWorks);
+    } catch (error) {
+      console.error("Error loading featured works:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="ourWork   w-full h-full flex flex-col justify-center items-center  gap-16 lg:gap-24 px-10 lg:py-5 lg:px-18 text-center mb-20 ">
       <div className="">
@@ -46,19 +37,31 @@ const OurWork = () => {
       </div>
 
       <div className="w-full lg:w-5/6 flex flex-col gap-8 lg:gap-14 ">
-        {Works.map((Work, key) => (
-          <>
-            <Divider />
-            <NavLink to={`/work/workPage/${Work.navLink}`}>
-              <div className=" flex justify-start lg:px-10">
-                <span className="text-lg lg:text-xl">{Work.title}</span>
-              </div>
-            </NavLink>
-          </>
-        ))}
+        {loading ? (
+          <div className="flex justify-center items-center py-8">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-project-orange"></div>
+          </div>
+        ) : works.length > 0 ? (
+          works.map((work, index) => (
+            <div key={work.id}>
+              <Divider />
+              <NavLink to={`/work/workPage/${work.routeName}`}>
+                <div className=" flex justify-start lg:px-10 hover:text-project-orange transition-colors">
+                  <span className="text-lg lg:text-xl">{work.title}</span>
+                </div>
+              </NavLink>
+            </div>
+          ))
+        ) : (
+          <div className="text-center py-8">
+            <p className="text-lg">No work projects available at the moment.</p>
+          </div>
+        )}
       </div>
 
-      <Button Content={"View more"} />
+      <NavLink to="/work">
+        <Button Content={"View more"} />
+      </NavLink>
     </section>
   );
 };

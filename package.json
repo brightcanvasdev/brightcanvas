@@ -17,6 +17,7 @@
     "@mui/material": "^6.4.5",
     "@tailwindcss/vite": "^4.0.3",
     "axios": "^1.7.9",
+    "firebase": "^12.3.0",
     "motion": "^12.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
