@@ -11,6 +11,7 @@ import BlogPage from "./pages/BlogPage";
 import Footer from "./components/Footer";
 import WorkPage from "./pages/WorkPage";
 import ContactPage from "./pages/ContactPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             exact
             element={<WorkPage />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         {/* <Footer /> */}
       </div>
