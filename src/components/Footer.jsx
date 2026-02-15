@@ -1,34 +1,60 @@
 import React from "react";
+import { NavLink } from "react-router";
+import Divider from "./Divider";
 
 const Footer = () => {
   return (
-    <footer className="w-[90%] p-4 lg:p-8 bg-[#212121] rounded-xl lg:rounded-4xl flex flex-col md:flex-row justify-between items-center gap-5">
+    <footer className="w-[90%] p-4 lg:p-8 bg-[#212121] rounded-4xl lg:rounded-4xl flex flex-col md:flex-row justify-between items-center gap-5">
+      {/* Logo */}
       <div className="">
         <img
           src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/MainAssets/Bright_Canvas_logo.webp"
           alt=""
-          className="h-16 lg:h-14 "
+          className="h-12 lg:h-18"
         />
       </div>
-      <div className="">
-        <span className="w-1/2 lg:w-max text-gray-300 text-base lg:text-base">
+      {/* Navigation */}
+      <div className="w-full lg:w-[60%] flex flex-col items-center gap-5 ">
+        <ul className="hidden md:flex items-center justify-center list-none gap-16 text-base">
+          <li className="">
+            <NavLink to="/about">About</NavLink>
+          </li>
+
+          <li className="">
+            <NavLink to="/blog">Design</NavLink>
+          </li>
+          <li className="">
+            <NavLink to="/blog">Tech</NavLink>
+          </li>
+          <li className="">
+            <NavLink to="/blog">Blog</NavLink>
+          </li>
+          <li className="">
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+        </ul>
+        <Divider />
+        <span className="w-full lg:w-max text-gray-300 text-sm lg:text-sm">
           © 2025 Brightcanvas.in All Rights Reserved
         </span>
       </div>
+      {/* Socails */}
       <div className="">
-        <ul>
+        <ul className="flex justify-center items-center gap-4 lg:gap-4">
           <li className="flex justify-center items-center gap-4 lg:gap-4">
-            {/* <a
-              href=""
-              className="p-2 lg:p-2 border-2 border-white rounded-full"
+            <a
+              href="https://www.instagram.com/birghtcanvas.in?igsh=MWk0amJ0MXlidDMyMA=="
+              target="_blank"
+              className="p-2 lg:p-2 border-2 border-white rounded-full hover:scale-110 transition-all ease"
             >
               <img
-                // src="./src/assets/images/facebook-new.png"
                 src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/facebook-new.png"
                 alt=""
                 className="w-5  lg:h-6 lg:w-6"
               />
-            </a> */}
+            </a>
+          </li>
+          <li className="flex justify-center items-center gap-4 lg:gap-4">
             <a
               href="https://www.instagram.com/birghtcanvas.in?igsh=MWk0amJ0MXlidDMyMA=="
               target="_blank"
@@ -40,6 +66,8 @@ const Footer = () => {
                 className="w-5  lg:h-6 lg:w-6"
               />
             </a>
+          </li>
+          <li className="flex justify-center items-center gap-4 lg:gap-4">
             <a
               href="https://www.linkedin.com/company/brightcanvas-in/"
               target="_blank"
@@ -52,6 +80,19 @@ const Footer = () => {
               />
             </a>
           </li>
+          <li className="flex justify-center items-center gap-4 lg:gap-4">
+            <a
+              href="https://www.instagram.com/birghtcanvas.in?igsh=MWk0amJ0MXlidDMyMA=="
+              target="_blank"
+              className="p-2 lg:p-2 border-2 border-white rounded-full hover:scale-110 transition-all ease"
+            >
+              <img
+                src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/envelopew.png"
+                alt=""
+                className="w-5  lg:h-6 lg:w-6"
+              />
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
@@ -59,3 +100,17 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* <a
+              href=""
+              className="p-2 lg:p-2 border-2 border-white rounded-full"
+            >
+              <img
+                // src="./src/assets/images/facebook-new.png"
+                src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/facebook-new.png"
+                alt=""
+                className="w-5  lg:h-6 lg:w-6"
+              />
+            </a> */
+}

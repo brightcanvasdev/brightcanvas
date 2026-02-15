@@ -30,7 +30,8 @@ const MobileMenu = styled.ul`
     isOpen ? "translateY(0)" : "translateY(-100%)"};
   border-radius: 0 0 20px 20px;
 
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 10px,
+  box-shadow:
+    rgba(255, 255, 255, 0.1) 0px 3px 10px,
     rgba(255, 255, 255, 0.2) 0px 6px 6px;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
@@ -56,25 +57,45 @@ const NavBar = () => {
         </NavLink>
       </div>
 
-      <ul className="hidden md:flex items-center justify-center list-none gap-28 text-base">
+      <ul className="hidden md:flex items-center justify-center list-none gap-16 text-base">
+        <li className="">
+          <NavLink to="/">Home</NavLink>
+        </li>
         <li className="">
           <NavLink to="/about">About</NavLink>
         </li>
-        <li className="">
+        {/* <li className="">
           <NavLink to="/work">Work</NavLink>
+        </li> */}
+        {/* <li className="">
+          <NavLink to="/design">Design</NavLink>
+        </li> */}
+        <li className="">
+          <NavLink to="/tech">Tech</NavLink>
         </li>
         <li className="">
           <NavLink to="/blog">Blog</NavLink>
         </li>
-        {/* <li className="">
+        <li className="">
           <NavLink to="/contact">Contact</NavLink>
-        </li> */}
+        </li>
       </ul>
 
       <MobileMenu
         isOpen={isOpen}
         className="lg:hidden  backdrop-blur-xl text-white bg-black  "
       >
+        <li className="">
+          <NavLink
+            to="/"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+          >
+            Home
+          </NavLink>
+        </li>
+        <Divider className="" />
         <li className="">
           <NavLink
             to="/about"
@@ -85,15 +106,26 @@ const NavBar = () => {
             About
           </NavLink>
         </li>
-        <Divider className="" />
+        {/* <Divider className="" />
         <li className="">
           <NavLink
-            to="/work"
+            to="/design"
             onClick={() => {
               setisOpen(!isOpen);
             }}
           >
-            Work
+            Design
+          </NavLink>
+        </li> */}
+        <Divider className="" />
+        <li className="">
+          <NavLink
+            to="/tech"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+          >
+            Tech
           </NavLink>
         </li>
         <Divider className="" />
@@ -126,6 +158,7 @@ const NavBar = () => {
           <Button
             checked={enabled}
             onChange={(e) => setEnabled(e.target.checked)}
+            Content={"LET'S TALK"}
           />
         </NavLink>
       </div>

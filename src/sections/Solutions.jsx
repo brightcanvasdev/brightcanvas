@@ -8,47 +8,47 @@ const SolutionsData = [
     id: 0,
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/edit.png",
-    title: "Brand Research",
-    desc: "We dive deep into the soul of your brand, uncover how your audience thinks, mapping the magic between brand and the audience.",
-    navLink: "",
+    title: "Branding Solutions",
+    desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions.",
+    navLink: "brandingsolutions",
   },
   {
     id: 1,
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/moodboard.png",
-    title: "Mood Boarding",
-    desc: "We translate ideas into visual stories - settings the tone, style, and feel that brings your brand to life.",
-    navLink: "",
+    title: "Tech Solutions",
+    desc: "Where technology awakens innovation, we build solutions that empower, scale businesses and transform digital visions.",
+    navLink: "techsolutions",
   },
   {
     id: 2,
     iconsURL:
-      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/ux.png",
-    title: "UI/UX",
-    desc: "We don’t just design interfaces — we engineer intuitive journeys that click, swipe, and convert.",
-    navLink: "",
+      "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/storytellingw.png",
+    title: "Content & Storytelling",
+    desc: "Where stories shape perception, we create content that captures attention, sparks connection, and turns audiences into loyal believers.",
+    navLink: "contentmediastorytelling",
   },
   {
     id: 3,
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/geometric-shape.png",
-    title: "Graphic Design Assets",
-    desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
-    navLink: "",
+    title: "Growth Systems",
+    desc: "Where precision fuels performance, we build growth engines that attract, nurture, and convert demand into measurable business impact.",
+    navLink: "leadgenerationgrowth",
   },
   {
     id: 4,
     iconsURL:
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/layers.png",
-    title: "Graphic Design Prints",
-    desc: "High quality print designs. From business cards and brochures to posters and packaging, we craft visually striking.",
-    navLink: "",
+    title: "Data Optimization",
+    desc: "Where insights guide decisions, we transform data into intelligence that refines experiences, maximizes ROI, and accelerates continuous improvement.",
+    navLink: "dataanalyticsoptimization",
   },
 ];
 
 const Solutions = () => {
   return (
-    <section className="  w-full h-full flex flex-col justify-center items-center gap-10 lg:gap-16 lg:py-5 text-center  mb-20 ">
+    <section className="w-full h-full flex flex-col justify-center items-center gap-10 lg:gap-16 lg:py-5 text-center  mb-20 ">
       <Title Title={"Solutions"} />
 
       <div className="solutCont flex flex-col justify-center items-center md:flex-row w-max  md:grid md:grid-cols-3 gap-7 ">
@@ -168,3 +168,46 @@ export default Solutions;
 //         ))}
 //       </div>
 //     </section>
+
+// const SolutionsData = [
+//   {
+//     id: 0,
+//     iconsURL:
+//       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/edit.png",
+//     title: "Brand Research",
+//     desc: "We dive deep into the soul of your brand, uncover how your audience thinks, mapping the magic between brand and the audience.",
+//     navLink: "",
+//   },
+//   {
+//     id: 1,
+//     iconsURL:
+//       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/moodboard.png",
+//     title: "Mood Boarding",
+//     desc: "We translate ideas into visual stories - settings the tone, style, and feel that brings your brand to life.",
+//     navLink: "",
+//   },
+//   {
+//     id: 2,
+//     iconsURL:
+//       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/ux.png",
+//     title: "UI/UX",
+//     desc: "We don’t just design interfaces — we engineer intuitive journeys that click, swipe, and convert.",
+//     navLink: "",
+//   },
+//   {
+//     id: 3,
+//     iconsURL:
+//       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/geometric-shape.png",
+//     title: "Graphic Design Assets",
+//     desc: "Where ideas awaken with creativity, we craft design that inspire, tell stories and bring visions",
+//     navLink: "",
+//   },
+//   {
+//     id: 4,
+//     iconsURL:
+//       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/layers.png",
+//     title: "Graphic Design Prints",
+//     desc: "High quality print designs. From business cards and brochures to posters and packaging, we craft visually striking.",
+//     navLink: "",
+//   },
+// ];

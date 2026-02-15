@@ -16,22 +16,22 @@ const About = () => {
     >
       <section
         id="home"
-        className="hero section w-full min-h-screen lg:h-screen flex flex-col justify-center items-center gap-10 lg:gap-4 px-8  lg:py-0 lg:pt-36 text-center "
+        className="hero section w-full min-h-screen lg:h-screen flex flex-col justify-center items-left lg:items-center gap-8 lg:gap-2 px-8  lg:py-0 lg:pt-36 text-left lg:text-center "
       >
-        <div className="container relative tracking-wider ">
-          <h1 className="Hero-Heading text-4xl lg:text-8xl lg:leading-30">
-            About
+        <div className=" relative tracking-wider ">
+          <h1 className="cabinetBold text-2xl lg:text-2xl lg:leading-30">
+            About Bright Canvas
           </h1>
         </div>
 
-        <div className="text-justify md:text-left md:text-lg">
+        <div className="cabinetLight text-justify md:text-left md:text-lg">
           <p className="">
-            At <span className="cabinetBold text-2xl">Bright Canvas</span>, we
+            At <span className="cabinetBold text-lg">Bright Canvas</span>, we
             don’t just build brands—we paint them into existence. Every company
             has a story, a vision, and a spark waiting to ignite. We take that
             spark and turn it into a masterpiece, blending strategy with
             creativity, design with purpose, and{" "}
-            <span className="cabinetBold text-lg">
+            <span className="cabinetBold text-base">
               innovation with emotion. 
             </span>
           </p>
@@ -55,23 +55,23 @@ const About = () => {
           </p>
           <br />
           At Bright Canvas, we don’t just create brands.{" "}
-          <span className="cabinetBold text-lg">We paint legacies.</span> 
+          <span className="cabinetBold text-base">We paint legacies.</span> 
         </div>
       </section>
 
       <div
-        className=" px-10 lg:py-0  lg:px-32 flex flex-col gap-16 
+        className=" px-10 lg:py-0  lg:px-32 flex flex-col gap-10 lg:gap-16 cabinetLight
       "
       >
         <div className="flex flex-col gap-4">
           <img
-            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/AboutImages/Vision.png"
+            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/AboutImages/vision.png"
             alt=""
             className="w-20 lg:w-32 "
           />
           <h2 className="cabinetBold text-2xl">Our Vision</h2>
 
-          <p className="text-lg">
+          <p className="text-base ">
             To be the world’s most vibrant digital branding agency—where
             creativity knows no boundaries, innovation shapes every brushstroke,
             and brands transform into unforgettable masterpieces. 
@@ -80,13 +80,13 @@ const About = () => {
 
         <div className="flex flex-col gap-4">
           <img
-            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/AboutImages/Mission.png"
+            src="https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/AboutImages/mission.png"
             alt=""
             className="w-20 lg:w-32"
           />
           <h2 className="cabinetBold text-2xl">Our Mission</h2>
 
-          <p className="text-lg">
+          <p className="text-base">
             To empower startups and tech companies with bold, visionary branding
             that tells their story, sparks connections, and leaves a lasting
             imprint. Through strategy, design, and digital artistry, we craft

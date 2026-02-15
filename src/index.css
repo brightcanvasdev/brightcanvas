@@ -26,8 +26,8 @@
   --color-project-brown: #fc8817;
   --color-project-gray: #b5b5b5;
   --drop-shadow-glow: 0px 0px 35px #e95e1e;
-  --drop-shadow-glow-new: #e95e1e 0px 8px 24px, #e95e1e 0px 16px 56px,
-    #e95e1e 0px 24px 80px;
+  --drop-shadow-glow-new:
+    #e95e1e 0px 8px 24px, #e95e1e 0px 16px 56px, #e95e1e 0px 24px 80px;
 }
 
 /* @plugin {
@@ -35,11 +35,19 @@ tailwindSCrollbar();
 } */
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .cabinetThin {
@@ -89,7 +97,11 @@ body {
 
 .material-symbols-rounded {
   @apply w-[1em] h-[1em] overflow-hidden;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .project-orange {
@@ -109,6 +121,16 @@ body {
   background-position: center;
 }
 
+.tech-bg {
+  /* background: url("https://github.com/brightcanvasdev/imagehosting/blob/main/HomePageAssets/HeroBG.png?raw=true"); */
+  background: url("https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/HeroImages/tech-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center;
+  /* height: 100vh; */
+}
+
 .Hero-Heading {
   font-family: "CabinetGrotesk-Extrabold";
 }
@@ -120,7 +142,7 @@ body {
 } */
 
 .solutionCard {
-  @apply bg-project-brown/25 hover:bg-gradient-to-r from-[#e95e1e] to-[#ffba2f] hover:drop-shadow-glow hover:scale-105 transition-all ease-out transition-discrete duration-500 p-4 lg:p-6 rounded-xl w-[350px] h-full flex flex-col flex-3  lg:min-w-[270px] lg:max-w-[370px] text-left;
+  @apply bg-project-brown/25 hover:bg-gradient-to-r from-[#e95e1e] to-[#ffba2f] hover:drop-shadow-glow hover:scale-105 transition-all ease-out transition-discrete duration-500 p-4 lg:p-6 rounded-xl w-[350px] h-full flex flex-col flex-3 justify-between lg:min-w-[270px] lg:max-w-[370px] text-left;
 }
 
 /* .solutionCard :hover {

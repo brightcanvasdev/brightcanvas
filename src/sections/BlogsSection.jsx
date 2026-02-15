@@ -29,8 +29,8 @@ const BlogsSection = () => {
   return (
     <section className="  w-full h-full flex flex-col justify-center items-center gap-10 lg:gap-12  lg:pt-5 text-center  ">
       <Title Title={"Blogs"} />
-
-      <div className="bg-project-sec-orange pt-10 pb-10 lg:pt-25 lg:pb-12 w-full h-full flex  flex-col justify-center items-center gap-10 lg:gap-20 rounded-t-[30px]">
+      {/* bg-project-sec-orange */}
+      <div className="bg-black pt-10 pb-10 lg:pt-25 lg:pb-12 w-full h-full flex  flex-col justify-center items-center gap-10 lg:gap-20 rounded-t-[30px]">
         <BlogCollection />
 
         <Footer />

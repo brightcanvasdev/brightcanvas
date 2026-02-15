@@ -9,9 +9,9 @@ const Form = () => {
       <form
         action="https://getform.io/f/aroyywob"
         method="post"
-        className="cabinetMedium contact-form flex flex-col justify-center items-center gap-8 lg:gap-16 "
+        className="cabinetMedium contact-form flex flex-col justify-center items-center gap-8 lg:gap-10 "
       >
-        <div className="w-full md:w-full flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-10 ">
+        <div className="w-full md:w-full flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-8 ">
           <div className="form-field   lg:flex-1">
             <label htmlFor="name" className="label  ">
               Name & Company
@@ -44,7 +44,21 @@ const Form = () => {
             />
           </div>
         </div>
+        <div className="w-full form-field ">
+          <label htmlFor="message" className="label">
+            Website/Social Media Link
+          </label>
 
+          <input
+            type="text"
+            name="url"
+            id="url"
+            autoComplete="url"
+            required
+            className="text-field mt-2"
+            placeholder="Enter URL of your Website or Social Media"
+          />
+        </div>
         <div className="w-full form-field ">
           <label htmlFor="message" className="label">
             Tell us

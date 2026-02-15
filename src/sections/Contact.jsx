@@ -12,7 +12,8 @@ const Contact = () => {
 
         <p className="cabinetMedium text-base lg:text-lg lg:w-3/4 text-center ">
           Got a great idea you’d like to bring to life? Share your details
-          below, and let’s create something amazing together!
+          below, and let’s create something amazing together! Or you can drop an
+          email at <span className="font-bold">info@brightcanvas.in</span>
         </p>
       </div>
 

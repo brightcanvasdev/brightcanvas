@@ -30,7 +30,7 @@ const Hero = () => {
         </span>
       </div>
       <div className="flex justify-center ">
-        <Button Content={"Lets Talk   "} />
+        <Button Content={"LET'S TALK"} />
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ const Home = () => {
       <Process />
       {/* <ImgCarousel /> */}
       <OurWork />
-      <BannerCarousel />
+      {/* <BannerCarousel /> */}
       <Contact />
       <BlogsSection />
     </motion.div>

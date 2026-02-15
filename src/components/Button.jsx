@@ -5,7 +5,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 
 const containerStyle = {
-  width: 140,
+  // width: 140,
   height: 50,
   borderRadius: 50,
   cursor: "pointer",
@@ -26,7 +26,7 @@ const handleStyle = {
   alignItems: "center",
 };
 
-export default function Button() {
+export default function Button({ Content, width }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -35,6 +35,7 @@ export default function Button() {
         className="toggle-container"
         style={{
           ...containerStyle,
+          width: width || 140,
           backgroundColor: isHovered ? "#e8571e" : "white",
           color: isHovered ? "white" : "black",
           flexDirection: isHovered ? "row-reverse" : "row",
@@ -48,7 +49,7 @@ export default function Button() {
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
           className="px-1"
         >
-          LET'S TALK
+          {Content}
         </motion.span>
 
         <motion.div
