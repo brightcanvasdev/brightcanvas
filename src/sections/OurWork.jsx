@@ -13,7 +13,7 @@ const worksData = [
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/moodboard.png",
     title: "Design",
     desc: "Where creativity awakens imagination, we craft experiences that inspire, shape brands and transform visual visions.",
-    navLink: "",
+    navLink: "/design",
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ const worksData = [
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/layers.png",
     title: "Tech",
     desc: "Where technology awakens innovation, we build solutions that empower, scale businesses and transform digital visions.",
-    navLink: "",
+    navLink: "/tech",
   },
 ];
 
