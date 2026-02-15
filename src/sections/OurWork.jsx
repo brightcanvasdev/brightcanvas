@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { NavLink } from "react-router";
 import { fetchFeaturedWorks } from "../services/workService";
 import SolutionCard from "../components/SolutionCard";
+import SolutionCardnew from "../components/SolutionCardnew";
 
 const worksData = [
   {
@@ -13,7 +14,7 @@ const worksData = [
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/moodboard.png",
     title: "Design",
     desc: "Where creativity awakens imagination, we craft experiences that inspire, shape brands and transform visual visions.",
-    navLink: "/design",
+    navLink: "",
   },
   {
     id: 1,
@@ -21,7 +22,7 @@ const worksData = [
       "https://raw.githubusercontent.com/brightcanvasdev/imagehosting/refs/heads/main/icons/layers.png",
     title: "Tech",
     desc: "Where technology awakens innovation, we build solutions that empower, scale businesses and transform digital visions.",
-    navLink: "/tech",
+    navLink: "tech",
   },
 ];
 
@@ -58,7 +59,7 @@ const OurWork = () => {
 
       <div className="w-full lg:w-5/6 flex justify-center flex-col lg:flex-row gap-8 lg:gap-14">
         {worksData.map((work) => (
-          <SolutionCard
+          <SolutionCardnew
             iconsURL={work.iconsURL}
             title={work.title}
             desc={work.desc}
