@@ -141,8 +141,47 @@ body {
   p-4 lg:p-6 rounded-xl w-[300px] flex-shrink-0 h-full flex flex-col text-left;
 } */
 
-.solutionCard {
+.solutionCardNew {
   @apply bg-project-brown/25 hover:bg-gradient-to-r from-[#e95e1e] to-[#ffba2f] hover:drop-shadow-glow hover:scale-105 transition-all ease-out transition-discrete duration-500 p-4 lg:p-6 rounded-xl w-[350px] h-full flex flex-col flex-3 justify-between lg:min-w-[270px] lg:max-w-[370px] text-left;
+}
+
+/* .solutionCard {
+  @apply bg-project-brown/25 
+  hover:bg-gradient-to-r 
+  from-[#e95e1e] 
+  to-[#ffba2f] 
+  hover:drop-shadow-glow 
+  hover:scale-105 
+  transition-all 
+  duration-500 
+  p-4 
+  lg:p-6 
+  rounded-xl 
+  w-full 
+  h-full 
+  flex 
+  flex-col 
+  justify-between 
+  text-left;
+}*/
+
+.solutionCard {
+  @apply bg-project-brown/25
+  hover:bg-gradient-to-r
+  from-[#e95e1e]
+  to-[#ffba2f]
+  hover:drop-shadow-glow
+  hover:scale-105
+  transition-all
+  duration-500
+  p-5
+  rounded-xl
+  w-full
+  h-full
+  flex
+  flex-col
+  justify-between
+  text-left;
 }
 
 /* .solutionCard :hover {

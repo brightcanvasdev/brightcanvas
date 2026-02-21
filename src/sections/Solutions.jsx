@@ -51,7 +51,9 @@ const Solutions = () => {
     <section className="w-full h-full flex flex-col justify-center items-center gap-10 lg:gap-16 lg:py-5 text-center  mb-20 ">
       <Title Title={"Solutions"} />
 
-      <div className="solutCont flex flex-col justify-center items-center md:flex-row w-max  md:grid md:grid-cols-3 gap-7 ">
+      {/* <div className="solutCont flex flex-col justify-center items-center md:flex-row w-max  md:grid md:grid-cols-3 gap-7 "> */}
+      {/* <div className="solutCont grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-full max-w-6xl auto-rows-fr"> */}
+      <div className="solutCont grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl px-4 auto-rows-fr">
         <div className="p-4 lg:p-6 rounded-xl w-[350px] lg:flex flex-col flex-3  lg:min-w-[270px] lg:max-w-[370px]  text-left block   gap-2">
           <span className="cabinetBold text-project-grad-yellow text-lg ">
             Services

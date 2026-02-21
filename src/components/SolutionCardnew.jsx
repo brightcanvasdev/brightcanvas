@@ -6,7 +6,7 @@ const SolutionCardnew = ({ iconsURL, title, desc, navLink }) => {
   return (
     <NavLink to={`/${navLink}`}>
       {/* // <NavLink to={`/${navLink}`}> */}
-      <div className="solutionCard  gap-2 lg:gap-3">
+      <div className="solutionCardNew  gap-2 lg:gap-3">
         <div className="">
           <img src={iconsURL} alt="" className="h-5 lg:h-6" />
         </div>
