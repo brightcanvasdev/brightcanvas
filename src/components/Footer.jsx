@@ -35,7 +35,7 @@ const Footer = () => {
         </ul>
         <Divider />
         <span className="w-full lg:w-max text-gray-300 text-sm lg:text-sm">
-          © 2025 Brightcanvas.in All Rights Reserved
+          © 2026 Brightcanvas.in All Rights Reserved
         </span>
       </div>
       {/* Socails */}
